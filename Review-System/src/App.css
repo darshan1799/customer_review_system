@@ -1,0 +1,43 @@
+.FormComponent
+{
+  width: 360px;
+  margin: auto;
+  margin-top: 14%;
+
+}
+.QuestionContainer
+{
+  
+  width: 500px;
+  background-color: rgb(168, 205, 235);
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  gap: 30px;
+  border-radius: 6px;
+  box-shadow: 3px 3px 3px gray;
+  margin: auto;
+  margin-top: 10%;
+}
+.BtnDiv
+{
+  display: flex;
+  justify-content: space-between;
+}
+.QuestionContainer h4
+{
+  position: relative;
+  left: 90%;
+  right: 3%;
+}
+.OptionButton
+{
+  width: 40px !important;
+  border-radius: 20px !important;
+}
+.ButtonContainer
+{
+  margin-top: -10px ;
+  display: flex;
+  gap: 8px;
+}
