@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(CookieParser());
 
 const corsOptions = {
-  origin: "http://localhost:5173",
+  origin: "https://customer-review-omega.vercel.app",
   credentials: true,
 };
 app.use(cors(corsOptions));
