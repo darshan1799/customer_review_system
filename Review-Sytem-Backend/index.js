@@ -34,7 +34,11 @@ app.post("/api/user", async (req, res) => {
     let token = jwt.sign(req.body, "DARSHANSUTARIYA", {
       expiresIn: 60 * 60 * 1000,
     });
-    res.cookie("token", token, { credentials: true, secure: true });
+    res.cookie("token", token, {
+      credentials: true,
+      secure: true,
+      sameSite: "None",
+    });
     res.send("Register Successfully");
   } else {
     res.status(404).send("You Are Already Give A Review");
