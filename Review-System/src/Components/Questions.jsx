@@ -26,7 +26,7 @@ function Questions() {
       for (let i in question) {
         a.push({ question: question[i], answer: answer[i] || null });
       }
-      fetch("http://localhost:2000/api/answer", {
+      fetch("https://customer-review.onrender.com/api/answer", {
         method: "PUT",
         headers: { "Content-Type": "Application/json" },
         body: JSON.stringify(a),
@@ -80,7 +80,7 @@ function Questions() {
 }
 export default Questions;
 export const LoadQuestions = () => {
-  return fetch("http://localhost:2000/api/getquestions", {
+  return fetch("https://customer-review.onrender.com/api/getquestions", {
     method: "GET",
     headers: { "Content-Type": "Application/json" },
   })

@@ -8,7 +8,7 @@ function Form() {
   const { handleChange, handleSubmit, values, errors } = useFormik({
     initialValues: { name: "", email: "" },
     onSubmit: (values, action) => {
-      fetch("http://localhost:2000/api/user", {
+      fetch("https://customer-review.onrender.com/api/user", {
         method: "POST",
         headers: { "Content-Type": "Application/json" },
         body: JSON.stringify(values),
